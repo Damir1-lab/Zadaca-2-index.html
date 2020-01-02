@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Animacija</title>
+    <style>
+        body{width:600px;
+      
+        background-color:#050210;
+        margin:0 auto;
+        
+        justify-content:center;
+        align-items: center;
+        height: 100vh;
+        display:flex;
+        
+        
+        
+        
+}
+    
+  .krug{position:relative;
+  width:350px;
+  height:350px;
+  border-radius:70%;
+  background:linear-gradient( #fb5dad, #55fb9f, #b97aff);
+  animation: animate 0.9s linear infinite;
+  
+  
+  }  
+  @keyframes animate
+  { 0%
+
+  {transform:rotate(0deg); }
+  
+  
+  100%
+  {transform:rotate(360deg);
+   
+   }
+  }
+
+
+  .krug span{ 
+position:absolute;
+width:350px;
+height:350px;
+border-radius:70%;
+background:linear-gradient( #fb5dad, #55fb9f, #b97aff);
+
+
+    
+
+
+       
+
+
+  }
+  .krug span:nth-child(1)
+  {
+      filter: blur(5px);
+      }
+  .krug span:nth-child(2)
+  {filter:blur(10px);}
+  .krug span:nth-child(3)
+  {filter:blur(25px);}
+  .krug span:nth-child(4)
+  {filter:blur(50px);}
+
+  .krug:after{
+  content: '';
+  position: absolute;
+  top: 20px;
+  left:20px;
+  right:20px;
+  bottom:20px;
+  background:#050210;
+  border-radius:70%;
+  }
+   
+
+    
+
+
+       
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    
+    <div class="krug">
+    
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    </div>
+       
+</body>
+</html>
